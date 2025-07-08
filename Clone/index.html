@@ -1,0 +1,277 @@
+<html>
+    <head>
+        <meta charset="UTF-8"/>
+        <meta name="viewport" content="width=device-width,initial-scale=1.0"/>
+        <title>Clone</title>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"/>
+        <link rel="stylesheet" href="style.css"/>
+    </head>
+    <body>
+        <header>
+            <nav>
+                <div class="nav">
+                <div class="left">
+                    <div class="toggle" onclick="openSideBar()">
+                        <span class="bar" id="first"></span>
+                        <span class="bar"></span>
+                        <span class="bar"></span>
+                    </div>
+
+                    <div class="logo">CloneSite</div>
+                </div>
+                
+                
+                <div class="nav-links">
+                    <a class="nav-item">Home</a>
+                    <a class="nav-item">Category</a>
+                    <a class="nav-item">Products</a>
+                    <a class="nav-item">About Us</a>
+                    <a class="nav-item">Contact Us</a>
+                    
+                </div>
+                
+                <div class="search">
+                    <input type="text" placeHolder="Search"/>
+                </div>
+                
+                <div class="buttons">
+                    <a class="nav-item"><i class="fas fa-shopping-cart"></i> Cart</a>
+                    <a class="nav-item">Login</a>
+                </div>
+                </div>
+                <div class="mobile-search">
+                    <div class="">
+                        <input placeHolder="Search Products ..."/>
+                        <i class="fas fa-magnifying-glass"></i>
+                    </div>
+                    
+                </div>
+            </nav>
+            
+            
+            <div class="side-bar">
+                <div class="close-btn" onclick="closeSideBar()">×</div>
+                <h1>CloneSite</h1>
+
+                <div class="side-bar-item">
+                    <i class="fas fa-house"></i>
+                    <a href="#">Home</a>
+                </div>
+                <div class="side-bar-item">
+                    <i class="fas fa-th-large"></i>
+                    <a href="#">Categories</a>
+                </div>
+                <div class="side-bar-item">
+                    <i class="fas fa-box-open"></i>
+                    <a href="#">Products</a>
+                </div>
+                <div class="side-bar-item">
+                    <i class="fas fa-info-circle"></i>
+                    <a href="#">About Us</a>
+                </div>
+                <div class="side-bar-item">
+                    <i class="fas fa-envelope"></i>
+                    <a href="#">Contact</a>
+                </div>
+                <div class="side-bar-item">
+                    <i class="fas fa-user"></i>
+                    <a href="#">Login</a>
+                </div>
+                <div class="side-bar-item">
+                    <i class="fas fa-shopping-cart"></i>
+                    <a href="#">Cart</a>
+                </div>
+            </div>
+        </header>
+        <main>
+            <section class="slides">
+                <div class="container">
+                    <div class="slide-card">
+                        <div class="left-content">
+                            <div class="ad-text">
+                                <h2>Big Summer Sale!</h2>
+                                <p>Get up to 50% off on selected products. Limited time only!</p>
+                            </div>
+                            <a class="ad-btn" href="#">Shop Now</a>
+                        </div>
+                        <div class="right-content">
+                            <img src="images/banner.png" alt="Ad Banner" />
+                        </div>
+                    </div>
+                    
+                </div>
+            </section>
+            <section class="categories">
+                <h4>Categories</h4>
+                <div class="categories-container">
+                    <div class="categories-wrapper">
+                        <i class="fas fa-gem fa-accesories-icon"></i>
+                        <h6>Accessories</h6>
+                    </div>
+                    <div class="categories-wrapper">
+                        <i class="fas fa-tshirt"></i>
+                        <h6>Clothes</h6>
+                    </div>
+                    <div class="categories-wrapper">
+                        <i class="fas fa-palette"></i>
+                        <h6>Art</h6>
+                    </div>
+                    
+                    <div class="categories-wrapper">
+                        <i class="fas fa-tools"></i>
+                        <h6>Hardware</h6>
+                    </div>
+                    <div class="categories-wrapper">
+                        <i class="fas fa-mobile-alt"></i>
+                        <h6>Electronics</h6>
+                    </div>
+                    <div class="categories-wrapper">
+                        <i class="fas fa-spa"></i>
+                        <h6>Beauty</h6>
+                    </div>
+                    <div class="categories-wrapper">
+                        <i class="fas fa-gem fa-accesories-icon"></i>
+                        <h6>Accessories</h6>
+                    </div>
+                    <div class="categories-wrapper">
+                        <i class="fas fa-tshirt"></i>
+                        <h6>Clothes</h6>
+                    </div>
+                    <div class="categories-wrapper">
+                        <i class="fas fa-palette"></i>
+                        <h6>Art</h6>
+                    </div>
+
+                    <div class="categories-wrapper">
+                        <i class="fas fa-tools"></i>
+                        <h6>Hardware</h6>
+                    </div>
+                    <div class="categories-wrapper">
+                        <i class="fas fa-mobile-alt"></i>
+                        <h6>Electronics</h6>
+                    </div>
+                    <div class="categories-wrapper">
+                        <i class="fas fa-spa"></i>
+                        <h6>Beauty</h6>
+                    </div>
+                    <div class="categories-wrapper">
+                        <i class="fas fa-ellipsis-h"></i>
+                        <h6>More</h6>
+                    </div>
+                </div>
+            </section>
+            <section class="products-container shadow">
+                <h2>Products</h2>
+                <div class="products"></div>
+                
+            </section>
+            <section class="trending shadow" >
+                <div class="trending-tags">
+                    <h1>Trending Searchs : </h1><br/>
+                    <span class="tag">Smartphones</span>
+                    <span class="tag">Women's Bags</span>
+                    <span class="tag">Gift</span>
+                    <span class="tag">Gaming Laptops</span>
+                    <span class="tag">Summer Dresses</span>
+                    <span class="tag">Sneakers</span>
+                    <span class="tag">Air Fryers</span>
+                    <span class="tag">Smart Watches</span>
+                    <span class="tag">HeadPhones</span>
+                </div>
+            </section>
+            <section class="slide-container shadow">
+                <h2>New Products</h2>
+                <div class="new-products"></div>
+            </section>
+        </main>
+        <footer class="footer">
+            <div class="footer-container">
+                <div class="footer-section">
+                    <h3>CloneSite</h3>
+                    <p>Your trusted place for trending deals and products.</p>
+                    <div class="social-icons">
+                        <a href="#"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                        <a href="#"><i class="fab fa-x-twitter"></i></a>
+                        <a href="#"><i class="fab fa-youtube"></i></a>
+                    </div>
+                </div>
+
+                <div class="footer-section">
+                    <h4>Quick Links</h4>
+                    <ul>
+                        <li><a href="#">Home</a></li>
+                        <li><a href="#">Category</a></li>
+                        <li><a href="#">Products</a></li>
+                        <li><a href="#">About Us</a></li>
+                        <li><a href="#">Contact</a></li>
+                    </ul>
+                </div>
+
+                <div class="footer-section">
+                    <h4>Support</h4>
+                    <ul>
+                        <li><a href="#">FAQs</a></li>
+                        <li><a href="#">Returns</a></li>
+                        <li><a href="#">Shipping</a></li>
+                        <li><a href="#">Privacy Policy</a></li>
+                    </ul>
+                </div>
+
+                <div class="footer-section">
+                    <h4>Newsletter</h4>
+                    <p>Subscribe to get updates on our latest offers</p>
+                    <form class="newsletter-form">
+                        <input type="email" placeholder="Your email" />
+                        <button type="submit"><i class="fas fa-paper-plane"></i></button>
+                    </form>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2025 CloneSite. All rights reserved.</p>
+            </div>
+        </footer>
+        <script>
+            const sideBar = document.querySelector(".side-bar");
+            const products= document.querySelector(".products");
+            const newProducts = document.querySelector(".new-products");
+            function openSideBar(){
+                sideBar.style.transform="translateX(0%)";
+            }
+            function closeSideBar(){
+                sideBar.style.transform="translateX(-100%)";
+            }
+            function setProducts(classP){
+            for (let i = 1; i <= 9; i++) {
+                const product = document.createElement('div');
+                product.className = 'product-card';
+                product.innerHTML = `
+                <div class="top">
+                    <div class="heart-icon">
+                        <i class="fa-regular fa-heart"></i>
+                        <i class="fa-solid fa-heart"></i>
+                    </div>
+                <img loading="lazy" src="images/img${i}.jpeg" alt="Product ${i}">
+                <h3>Product ${i}</h3>
+                <p>$${(i * 10).toFixed(2)}</p>
+                </div>
+                <div class="bottom">
+                <button>Add to Cart</button>
+                </div>
+                `;
+                classP.appendChild(product);
+                
+            }
+            const moreProducts= document.createElement('div');
+                moreProducts.className = 'more-products-container';
+                moreProducts.innerHTML = `<div class="more-products shadow">
+                <a>More</a>
+                </div>
+                `;
+                classP.appendChild(moreProducts);
+            }
+            setProducts(products);
+            setProducts(newProducts);
+        </script>
+    </body>
+</html>
