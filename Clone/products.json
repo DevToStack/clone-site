@@ -1,0 +1,66 @@
+[
+  {
+    "id": 1,
+    "name": "Wireless Headphones",
+    "price": 500,
+    "dprice":700,
+    "image": "images/headphone.jpeg"
+  },
+  {
+    "id": 2,
+    "name": "Smartwatch",
+    "price": 2000,
+    "dprice":2600,
+    "image": "images/watch.jpeg"
+  },
+  {
+    "id": 3,
+    "name": "Bluetooth Speaker",
+    "price": 600,
+    "dprice":700,
+    "image": "images/speaker.jpeg"
+  },
+  {
+    "id": 4,
+    "name": "Gaming Mouse",
+    "price": 400,
+    "dprice":600,
+    "image": "images/mouse.jpeg"
+  },
+  {
+    "id": 5,
+    "name": "Mechanical Keyboard",
+    "price": 800,
+    "dprice":950,
+    "image": "images/key_board.jpeg"
+  },
+  {
+    "id": 6,
+    "name": "External Hard Drive",
+    "price": 8000,
+    "dprice":8700,
+    "image": "images/storage.jpeg"
+  },
+  {
+    "id": 7,
+    "name": "Portable Charger",
+    "price": 960,
+    "dprice":1300,
+    "image": "images/power.jpeg"
+  },
+  {
+    "id": 8,
+    "name": "Laptop Stand",
+    "price": 340,
+    "dprice":400,
+    "image": "images/stand.jpeg"
+  },
+  {
+    "id": 9,
+    "name": "LED Desk Lamp",
+    "price": 460,
+    "dprice":530,
+    "image": "images/lamp.jpeg"
+  }
+  
+]
