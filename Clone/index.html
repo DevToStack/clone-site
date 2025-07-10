@@ -95,10 +95,10 @@
                             <a class="ad-btn" href="#">Shop Now</a>
                         </div>
                         <div class="right-content">
-                            <img src="images/banner.png" alt="Ad Banner" />
+                            <img src="images/watch.jpeg" alt="Ad Banner" />
                         </div>
                     </div>
-                    
+
                 </div>
             </section>
             <section class="categories">
@@ -161,9 +161,9 @@
                 </div>
             </section>
             <section class="products-container shadow">
-                <h2>Products</h2>
+                <h3>Products</h3>
                 <div class="products"></div>
-                
+                <div class="products-d"></div>
             </section>
             <section class="trending shadow" >
                 <div class="trending-tags">
@@ -180,7 +180,7 @@
                 </div>
             </section>
             <section class="slide-container shadow">
-                <h2>New Products</h2>
+                <h3>New Products</h3>
                 <div class="new-products"></div>
             </section>
         </main>
@@ -226,11 +226,13 @@
                         <button type="submit"><i class="fas fa-paper-plane"></i></button>
                     </form>
                 </div>
+                
             </div>
             <div class="footer-bottom">
                 <p>&copy; 2025 CloneSite. All rights reserved.</p>
             </div>
         </footer>
+        
         <script>
             const sideBar = document.querySelector(".side-bar");
             const products= document.querySelector(".products");
@@ -241,27 +243,41 @@
             function closeSideBar(){
                 sideBar.style.transform="translateX(-100%)";
             }
+            function productsC(classC){
+fetch('products.json')
+  .then(res => res.json())
+  .then(products => {
+    
+    products.forEach(productData => {
+      const product = document.createElement('div');
+      product.className = 'product-card';
+      product.innerHTML = `
+        <div class="top">
+          <div class="heart-icon">
+            <i class="fa-regular fa-heart"></i>
+            <i class="fa-solid fa-heart"></i>
+          </div>
+          <div class="image-container">
+              <img loading="lazy" src="${productData.image}" alt="${productData.name}">
+           </div>
+          <h5>${productData.name}</h5>
+          <p>₹${productData.price.toFixed(2)} <strike>₹${productData.dprice.toFixed(2)}</strike></p>
+          <div class="star">
+              <p>4 <i class="fas fa-star"></i></p>
+          </div>
+        </div>
+        <div class="bottom">
+          <button>Add to Cart</button>
+        </div>
+      `;
+      classC.appendChild(product);
+    });
+    setProducts(classC);
+  })
+  .catch(err => console.error('Failed to load products:', err));
+}
             function setProducts(classP){
-            for (let i = 1; i <= 9; i++) {
-                const product = document.createElement('div');
-                product.className = 'product-card';
-                product.innerHTML = `
-                <div class="top">
-                    <div class="heart-icon">
-                        <i class="fa-regular fa-heart"></i>
-                        <i class="fa-solid fa-heart"></i>
-                    </div>
-                <img loading="lazy" src="images/img${i}.jpeg" alt="Product ${i}">
-                <h3>Product ${i}</h3>
-                <p>$${(i * 10).toFixed(2)}</p>
-                </div>
-                <div class="bottom">
-                <button>Add to Cart</button>
-                </div>
-                `;
-                classP.appendChild(product);
-                
-            }
+            
             const moreProducts= document.createElement('div');
                 moreProducts.className = 'more-products-container';
                 moreProducts.innerHTML = `<div class="more-products shadow">
@@ -270,8 +286,13 @@
                 `;
                 classP.appendChild(moreProducts);
             }
-            setProducts(products);
-            setProducts(newProducts);
+            productsC(products);
+            
+            productsC(newProducts);
+            
+            
+            
         </script>
+        <script src="script.js"></script>
     </body>
 </html>
