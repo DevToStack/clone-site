@@ -153,7 +153,7 @@ nav{
     border:0.1px solid Black;
 }
 .side-bar-item:hover {
-  background-color: rgba(0, 123, 255, 0.1);
+  background-color: #dff;
 }
 
 .side-bar-item i {
@@ -331,7 +331,10 @@ main{
     margin-bottom:5px;
     font-size:12px;
 }
-
+.price{
+    margin-right:5px;
+    font-size:12px;
+}
 /** New Products **/
 .slide-container{
     margin-top:10px;
@@ -392,7 +395,7 @@ main{
 
 .heart-icon i{
     font-size: 16px;
-    color: rgba(255,20,20,0.8);
+    color: rgba(255,20,20,1);
     transition: opacity 0.2s ease;
 }
 
@@ -425,7 +428,7 @@ main{
     padding-left:4px;
     padding-right:4px;
     padding-bottom:0px;
-    width:30px;
+    width:max-content;
     height:20px;
     background-color:#099;
     justify-content:center;
