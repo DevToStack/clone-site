@@ -4,6 +4,7 @@
     "name": "Wireless Headphones",
     "price": 500,
     "dprice":700,
+    "rating":"4.0",
     "image": "images/headphone.jpeg"
   },
   {
@@ -11,6 +12,7 @@
     "name": "Smartwatch",
     "price": 2000,
     "dprice":2600,
+    "rating":"3.8",
     "image": "images/watch.jpeg"
   },
   {
@@ -18,6 +20,7 @@
     "name": "Bluetooth Speaker",
     "price": 600,
     "dprice":700,
+    "rating":null,
     "image": "images/speaker.jpeg"
   },
   {
@@ -25,6 +28,7 @@
     "name": "Gaming Mouse",
     "price": 400,
     "dprice":600,
+    "rating":"4.4",
     "image": "images/mouse.jpeg"
   },
   {
@@ -32,6 +36,7 @@
     "name": "Mechanical Keyboard",
     "price": 800,
     "dprice":950,
+    "rating":"4.1",
     "image": "images/key_board.jpeg"
   },
   {
@@ -39,6 +44,7 @@
     "name": "External Hard Drive",
     "price": 8000,
     "dprice":8700,
+    "rating":"3.9",
     "image": "images/storage.jpeg"
   },
   {
@@ -46,6 +52,7 @@
     "name": "Portable Charger",
     "price": 960,
     "dprice":1300,
+    "rating":"4.0",
     "image": "images/power.jpeg"
   },
   {
@@ -53,6 +60,7 @@
     "name": "Laptop Stand",
     "price": 340,
     "dprice":400,
+    "rating":null,
     "image": "images/stand.jpeg"
   },
   {
@@ -60,6 +68,7 @@
     "name": "LED Desk Lamp",
     "price": 460,
     "dprice":530,
+    "rating":"4.0",
     "image": "images/lamp.jpeg"
   }
   
