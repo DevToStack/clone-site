@@ -37,7 +37,7 @@ function productsC(classC){
                 `;
                 const starDiv = product.querySelector(".star");
                 
-                if (productData.rating !== null) {
+                if (productData.rating !== null && productData.rating !== 'none') {
                     starDiv.innerHTML = `<p>${productData.rating}<i class="fas fa-star"></i></p>`;
                 }else {
                     starDiv.style.display = 'none';
