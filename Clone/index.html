@@ -2,7 +2,7 @@
     <head>
         <meta charset="UTF-8"/>
         <meta name="viewport" content="width=device-width,initial-scale=1.0"/>
-        <title>Clone</title>
+        <title>Clone Site</title>
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"/>
         <link rel="stylesheet" href="style.css"/>
     </head>
@@ -232,67 +232,6 @@
                 <p>&copy; 2025 CloneSite. All rights reserved.</p>
             </div>
         </footer>
-        
-        <script>
-            const sideBar = document.querySelector(".side-bar");
-            const products= document.querySelector(".products");
-            const newProducts = document.querySelector(".new-products");
-            function openSideBar(){
-                sideBar.style.transform="translateX(0%)";
-            }
-            function closeSideBar(){
-                sideBar.style.transform="translateX(-100%)";
-            }
-            function productsC(classC){
-fetch('products.json')
-  .then(res => res.json())
-  .then(products => {
-    
-    products.forEach(productData => {
-      const product = document.createElement('div');
-      product.className = 'product-card';
-      product.innerHTML = `
-        <div class="top">
-          <div class="heart-icon">
-            <i class="fa-regular fa-heart"></i>
-            <i class="fa-solid fa-heart"></i>
-          </div>
-          <div class="image-container">
-              <img loading="lazy" src="${productData.image}" alt="${productData.name}">
-           </div>
-          <h5>${productData.name}</h5>
-          <p>₹${productData.price.toFixed(2)} <strike>₹${productData.dprice.toFixed(2)}</strike></p>
-          <div class="star">
-              <p>4 <i class="fas fa-star"></i></p>
-          </div>
-        </div>
-        <div class="bottom">
-          <button>Add to Cart</button>
-        </div>
-      `;
-      classC.appendChild(product);
-    });
-    setProducts(classC);
-  })
-  .catch(err => console.error('Failed to load products:', err));
-}
-            function setProducts(classP){
-            
-            const moreProducts= document.createElement('div');
-                moreProducts.className = 'more-products-container';
-                moreProducts.innerHTML = `<div class="more-products shadow">
-                <a>More</a>
-                </div>
-                `;
-                classP.appendChild(moreProducts);
-            }
-            productsC(products);
-            
-            productsC(newProducts);
-            
-            
-            
-        </script>
         <script src="script.js"></script>
     </body>
 </html>
